@@ -1,0 +1,243 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+// main {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   background-color: #fff;
+//   // display: block;
+// }
+
+.ableton {
+  position: relative;
+  background-color: #fff;
+
+  &__img {
+    // padding: 0 8rem 0 8rem;
+    // display: block;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2 / 12;
+
+    &--logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+  }
+}
+
+.about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+
+  &__text {
+    grid-column: 4 / 10;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-purple-dark;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  &__description {
+    grid-column: 4 / 10;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+}
+
+.gallery {
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  grid-template-rows: repeat(12, 1fr);
+
+  .yellow {
+    grid-column: 6 /-1;
+    grid-row: 1/-1;
+    background-color: $color-yellow;
+  }
+
+  &__img--1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // background-position: 50% 50%;
+    background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop&amp;h=667&amp;ixjsv=1.1.3&amp;w=667);
+
+    grid-column: 2/7;
+    grid-row: 3/11;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__img--2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // background-position: 50% 50%;
+    background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop);
+
+    grid-column: 8/12;
+    grid-row: 4/10;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+.video {
+  background-color: #fff;
+  // text-align: center;
+  display: flex;
+  padding-bottom: 8rem;
+
+  &__div {
+    margin: 0 auto;
+  }
+
+  &__youtube {
+    width: 800px;
+    height: 450px;
+  }
+
+  &__description {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+.customers {
+  background-color: #fff;
+
+  &__text {
+    grid-column: 4 / 10;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+
+  &__description {
+    grid-column: 4 / 10;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+}
+
+.gallery2 {
+  background-color: #fff;
+  width: 100%;
+  height: 85rem;
+  grid-template-rows: repeat(16, 1fr);
+  padding-bottom: 10rem;
+
+  &__green {
+    background-color: $color-green;
+    grid-column: 1/8;
+    grid-row: 1/-1;
+  }
+
+  &__img1 {
+    grid-column: 2/6;
+    grid-row: 3/7;
+    z-index: 5;
+  }
+  &__img2 {
+    grid-column: 7/12;
+    grid-row: 5/15;
+    // display: none;
+  }
+  &__img3 {
+    grid-column: 2/6;
+    grid-row: 10/13;
+  }
+}
+
+.graph {
+  background-color: #fff;
+
+  &__img {
+    grid-column: 2/11;
+  }
+}
+
+.gallery3 {
+  background-color: #fff;
+  // height: 933px;
+  grid-template-rows: repeat(12, 78px);
+
+  &::before {
+    content: '';
+    background-color: $color-purple;
+    grid-column: 3/11;
+    grid-row: 1/-1;
+    height: 933px;
+    display: block;
+
+    // z-index: -2;
+  }
+
+  &__img1 {
+    grid-column: 2/4;
+    grid-row: 4;
+    z-index: 1;
+  }
+
+  &__img2 {
+    grid-column: 8/-1;
+    grid-row: 3;
+    z-index: 1;
+  }
+}
+
+.jobs {
+  background-color: #fff;
+  &__img {
+    grid-column: 2/6;
+  }
+  &__box {
+    grid-column: 7/12;
+    display: flex;
+    align-items: center;
+    background-color: $color-blue;
+  }
+  &__text {
+    background-color: $color-blue;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 0 8rem;
+
+    a {
+      display: block;
+      margin-top: 2rem;
+      text-decoration: none;
+      &:hover {
+        color: $color-purple-dark;
+      }
+    }
+  }
+}
+
+.footer__separator {
+  height: 2px;
+  background-color: #f3f3f3;
+}

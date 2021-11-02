@@ -1,0 +1,137 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.nav {
+  background-color: #fff;
+  padding-top: 0.5rem;
+  // padding-bottom: 0.5rem;
+
+  &__logo {
+    // margin-left: 2rem;
+    // display: inline-block;
+    // background-color: blue;
+    height: 27.3px;
+    width: 58.5px;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.2rem;
+    margin-left: 1.5rem;
+
+    &--secondary {
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--active {
+      color: $color-orange;
+    }
+
+    &--blue {
+      color: $color-purple-dark;
+    }
+
+    &--right {
+      margin-left: auto;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &--small {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+
+    &--secondary {
+      font-size: 1rem;
+      font-weight: bold;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__separator {
+    height: 2px;
+    background-color: #f3f3f3;
+  }
+
+  &__filler {
+    width: 100%;
+    background-color: #fff;
+    height: 69px;
+    display: none;
+  }
+
+  &__filler--visible {
+    display: block;
+  }
+}
+
+.sticky {
+  position: fixed;
+  // box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+  width: 83%;
+  z-index: 1000;
+  background-color: #fff;
+  top: 0;
+  opacity: 0.9;
+}
+// #nav.fixed ul li img {
+//   height: 36px;
+// }
+// #nav.fixed ul li a {
+//   font-size: 14px;
+// }
+
+.nav__more {
+  padding: 2.5rem;
+
+  &__heading {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  &__link {
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &--orange {
+      color: $color-orange;
+    }
+
+    &--heading {
+      padding-bottom: 0.5rem;
+    }
+
+    &--description {
+      line-height: 1.6;
+      padding-right: 1rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__container--25p {
+    width: 25%;
+  }
+}
