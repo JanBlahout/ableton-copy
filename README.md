@@ -12,4 +12,4 @@ Sticky navigation
 Button "More +" is working and is displaying new content after click.
 
 What is missing on site:
-Website is not responsive. Website is created only for big screens. No tablet or mobile support.
+Website is not responsive. Website is created only for big screens. No tablet or mobile support (yet).
